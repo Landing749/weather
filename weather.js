@@ -1,4 +1,4 @@
-const API_KEY = '78c58f94d7d1c691d3aacb026099dde8';
+const API_KEY = 'e352d46dd2b3505bc62101d96fc70e39';
 const CITY = 'Manila';
 
 async function fetchWeather() {
