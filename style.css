@@ -1,0 +1,65 @@
+/* Reset and body */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.7s ease;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Weather app container */
+.weather-app {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Weather icon */
+#weather-icon {
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Temperature */
+#temp {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Description */
+#desc {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Last update */
+#lastUpdate {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Backgrounds */
+.sunny { background: linear-gradient(to top, #fbc2eb, #a6c1ee); }
+.cloudy { background: linear-gradient(to top, #d7d2cc, #304352); }
+.rainy { background: linear-gradient(to top, #2c3e50, #3498db); }
+.snowy { background: linear-gradient(to top, #83a4d4, #b6fbff); }
+
+/* Responsive */
+@media(max-width:400px){
+    .weather-app { width: 90%; padding:30px; }
+    #weather-icon { font-size:80px; }
+    #temp { font-size:36px; }
+    #desc { font-size:18px; }
+}
